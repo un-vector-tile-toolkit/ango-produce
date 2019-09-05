@@ -5,6 +5,6 @@ task :default do
     --prefilter='node prefilter.js'\
     ../geojsons-natural-disaster-monuments/data.geojsons"
   sh "tile-join --force\
-    --output-to-directory=tiles tiles.mbtiles\
+    --output-to-directory=zxy tiles.mbtiles\
     --no-tile-compression"
 end
